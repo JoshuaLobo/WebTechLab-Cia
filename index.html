@@ -16,6 +16,14 @@
 
 
 </script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $(".colorPicker").change(function(){
+        $('body').css('background-color', $(this).css('background-color'));
+    });
+});
+</script>
 <style type="text/css">
 	audio{
 	position: absolute;
@@ -34,9 +42,10 @@ img
 {
 	border: 1px solid black
 }
-	body
-	{ background-color: #19C45D;
-	}
+body{
+
+  background-color: #19C45D;
+}
 </style>
 <body>
 
@@ -114,7 +123,9 @@ img
  <fieldset>
  	<legend>Hobbies and Trivial inofrmation</legend>
  	<label style="text-align: right;"for="favcolor">Select your favorite color:</label>
-  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+  
+  <input type="color" class="colorPicker" id="favcolor" name="favcolor"
+    onchange="document.body.style.backgroundColor = '#'+this.color"><br><br>
   Preffered application to work with?<br>
  <img src="workplace.jpg" usemap="#image-map">
 
