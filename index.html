@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Builder</title>
+</head>
+<script type="text/javascript">
+	function myFunction() {
+  		var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+
+</script>
+<style type="text/css">
+	audio{
+	position: absolute;
+right: 0;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 70%;
+  padding:10px;
+  box-sizing: border-box
+
+}
+img
+{
+	border: 1px solid black
+}
+</style>
+<body>
+
+<h2 style="text-align: left;">Hello and Welcome </h2>
+
+<h4 style="text-align: right;">play some relaxing music <br>while filling out the form </h4>
+
+<audio style=""controls>
+  <source src="2019-04-20_-_Quiet_Time_-_David_Fesliyan.mp3" type="audio/ogg">
+  <source src="2019-04-20_-_Quiet_Time_-_David_Fesliyan.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br><br><br>
+
+<form >
+	<fieldset>
+		<legend>Personal Details</legend>
+
+<!--Used input type file for photo-->
+	<label for="myfile">Select a photograph:</label>
+	<input type="file" id="myfile" name="myfile"><br><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" placeholder="First Name" ><br><br>
+  <label for="mname">Middle name:</label><br>
+  <input type="text" id="mname" placeholder="Middle Name" ><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" placeholder="Last Name" required><br><br>
+  
+  <label for="Fatname">Fathers name:</label><br>
+  <input type="text" id="fatname" placeholder="Fathers Name" required><br><br>
+<label >Gender</label><br>
+ <input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label><br><br>
+<!--Used input type number for age-->
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" placeholder="Age" required><br><br>
+
+
+ </fieldset>
+ <br><br>
+
+ <fieldset>
+		<legend>Contact Details</legend>
+	<!--Used input type tel for phone-->
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="tel" placeholder="Phone Number" required><br><br>
+  
+  <!--Used input type email for email-->
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" placeholder="Email ID" required><br><br>
+  
+  
+ </fieldset>
+ <br><br>
+  
+
+ <fieldset>
+ 	<legend>Professional details</legend>
+ 	<!--Used input type range for work expersience-->
+ 	<label for="wrkexp">Work Experience:</label><br>
+ 	<input type="range" width="150"name="wrkexp" id="wrkexp" min="0" max="50" step="1" value="25">
+ 	<output class="wrkexp-output" for="wrkexp"></output>
+ </fieldset>
+
+ <fieldset>
+ 	<legend>Scheule Apointmnet</legend>
+
+ 	<!--Used input type datetime-local for schedule-->
+  <label for="birthday">Birthday:</label>
+  <input type="datetime-local" id="birthday" name="birthday">
+ </fieldset>
+ <fieldset>
+ 	<legend>Hobbies and Trivial inofrmation</legend>
+ 	<label style="text-align: right;"for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+  Preffered application to work with?<br>
+ <img src="workplace.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="laptop" title="laptop" href="https://en.wikipedia.org/wiki/Laptop" coords="193,78,335,72,385,159,493,176,390,261,258,217" shape="poly">
+    <area target="_blank" alt="Mobile Phone" title="Mobile Phone" href="https://en.wikipedia.org/wiki/Mobile_phone" coords="57,65,124,53,123,259,55,238" shape="poly">
+</map>
+
+
+ </fieldset>
+
+
+<p id="demo"></p>
+<!--Used input type image for submit as image-->
+ <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+ 	<!--Used input type reset for resetting-->
+<input type="reset">
+
+</form> 
+<br><br><br>
+<table >
+	<caption style="text-align: center;">JOb Avaliabilites</caption>
+  <tr>
+    <th>Company</th>
+    <th>salary</th>
+    <th>require experience</th>
+  </tr>
+  <tr>
+    <td>Cisco</td>
+    <td>$1000</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Intel</td>
+    <td>$7000</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>AMD</td>
+    <td>$4000</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>NVidea</td>
+    <td>$14000</td>
+    <td>7</td>
+  </tr>
+</table>
+<br><br>
+<B>Short Video on how to write A good Resume</B><br><br>
+<iframe width="70%" height="600"
+src="https://www.youtube.com/embed/y8YH0Qbu5h4">
+</iframe>
+<br><br>
+</body>
+</html>
